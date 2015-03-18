@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .home-banner {
   background: url(../../assets/images/home_background_blur.jpg) no-repeat;
   background-size: cover;
@@ -15,6 +17,7 @@
     font-size: 5rem;
     line-height: 1em;
     text-shadow: rgba(black, .7) 0 2px 2px;
+    margin-bottom: 2rem;
   }
   h3 {
     font-size: 2rem;
