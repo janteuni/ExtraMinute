@@ -15,18 +15,21 @@
   }
   .infos {
     margin: 1em;
-    .jobs {
-      height: 260px;
-    }
     h2 {
       font-family: 'Advent Pro', sans-serif;
       font-weight: 600;
-      font-size: 1.6em;
       line-height: 1em;
     }
+    .jobs-pro {
+      height: 260px;
+      table {
+        margin-top: 1em;
+      }
+    }
+    .jobs-extra {
+      height: 160px;
+    }
     table {
-      margin-top: 1em;
-      margin-bottom: 1em;
       width: 100%;
       td {
         vertical-align: middle;
@@ -51,5 +54,16 @@
         padding: .5em 0 .5em 1em;
       }
     }
+  }
+}
+
+.filters-search {
+  background-color: darken($c-blue, 18);
+  color: white;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  i {
+    margin-right: 1em;
   }
 }

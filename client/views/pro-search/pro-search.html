@@ -1,26 +1,36 @@
+
+<section class="row">
+  <div class="all-full">
+    <header class="filters-search">
+      <h1><i class="icon-toque"></i>Rechercher une aide extraordinaire</h1>
+    </header>
+
+</div>
+</section>
+
 <section class="extra-results">
   <ul class="result row">
-    <li class="card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
+    <li class="card desktop-3 tablet-2 mobile-full" ng-repeat="result in vm.results">
       <img class="img-extra" src="{{result.img}}" alt=""/>
 
       <div class="infos">
-        <div class="jobs">
+        <div class="jobs-extra">
           <h2 class="text-center extra-name ">{{result.name}}</h2>
           <p class="text-center">
             <i class="ion-star c-yellow" ng-repeat="i in vm.getNumber(result.stars) track by $index"></i>
           </p>
           <table>
-            <tr>
+            <tr  ng-repeat="job in result.job">
               <td class="w-10">
-                <i ng-if="result.job == 'Sommelier' " class="icon-bottle"></i>
-                <i ng-if="result.job == 'Cuisto' " class="icon-couvert"></i>
-                <i ng-if="result.job == 'Sous-chef' " class="icon-toque"></i>
-                <i ng-if="result.job == 'Service' " class="icon-clo"></i>
-                <i ng-if="result.job == 'Barman' " class="icon-glass"></i>
-                <i ng-if="result.job == 'Commis' " class="icon-cut"></i>
+                <i ng-if="job == 'Sommelier' " class="icon-bottle"></i>
+                <i ng-if="job == 'Cuisto' " class="icon-couvert"></i>
+                <i ng-if="job == 'Sous-chef' " class="icon-toque"></i>
+                <i ng-if="job == 'Service' " class="icon-clo"></i>
+                <i ng-if="job == 'Barman' " class="icon-glass"></i>
+                <i ng-if="job == 'Commis' " class="icon-cut"></i>
               </td>
               <td class="w-70">
-                <p>{{result.job}}</p>
+                <p>{{job}}</p>
               </td>
             </tr>
           </table>
