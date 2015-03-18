@@ -34,7 +34,7 @@ angular.module('extraMinute')
           .to(loader, 0.25, { opacity: 0, y: 30, delay: 0.5, ease: 'Back.easeInOut' })
           .to(header, 0.25, { opacity: 0, y: 30, delay: -0.25 })
           .addCallback(function () {
-            $location.path('/');
+            $location.path('/extra/profile');
             $scope.$apply();
           });
       }
