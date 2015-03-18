@@ -1,0 +1,70 @@
+@import "variables";
+
+.sidebar {
+
+  > header {
+
+    padding: 2em 0;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: rgba(black, .2) 0 3px 3px;
+    }
+
+  }
+
+  > nav {
+    > .nav-item {
+      color: darken(white, 15);
+      text-shadow: rgba(black, .5) 0 1px;
+      cursor: pointer;
+      outline: none;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 1em 0;
+      background: transparent;
+      border: none;
+      font-size: 16px;
+
+      &.spaced {
+        margin-top: 2em;
+      }
+
+      &:hover {
+        background: rgba(black, .1);
+      }
+
+      &.active {
+        background: rgba(black, .3);
+      }
+
+      > i {
+        width: 50px;
+        font-size: 25px;
+      }
+      > .badge {
+        margin-left: auto;
+        margin-right: 1em;
+        padding: 5px;
+        border-radius: 8px;
+      }
+      > .badge-red {
+        @extend .badge;
+        background: $c-red;
+        color: white;
+      }
+      > .badge-blue {
+        @extend .badge;
+        background: $c-blue;
+        color: white;
+      }
+    }
+  }
+
+}

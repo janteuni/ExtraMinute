@@ -2,7 +2,10 @@
 @import "utils";
 @import "form";
 @import "button";
+@import "sidebar";
 
+// imports
+@import "../views/extra-profile/extra-profile";
 @import "../views/extra-search/extra-search";
 @import "../views/login/login";
 @import "../views/home/home";
@@ -30,6 +33,18 @@ body {
 
 .view {
   flex: 1;
+
+  &.ng-enter {
+    -webkit-transition: 0.2s ease-out opacity;
+    transition: 0.2s ease-out opacity;
+    opacity: 0;
+
+    &.ng-enter-active {
+      opacity: 1;
+    }
+
+  }
+
 }
 
 .main-footer {
@@ -40,6 +55,14 @@ body {
   border: 1px solid white;
   background: darken(white, 2);
   box-shadow: rgba(black, .05) 0 4px 5px;
+}
+
+.card-dark {
+  border: 1px solid darken($c-black, 5);
+  background: $c-black;
+  color: darken(white, 15);
+  text-shadow: rgba(black, .5) 0 1px;
+  box-shadow: rgba(black, .2) 0 4px 5px;
 }
 
 .panel-dark {

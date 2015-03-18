@@ -42,3 +42,7 @@
 em {
   font-weight: bolder;
 }
+
+.flow + .flow {
+  margin-top: 1em;
+}
