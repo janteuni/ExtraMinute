@@ -9,7 +9,7 @@ angular.module('extraMinute')
       results: [
         {
           name: 'Ze kitchen',
-          img: 'Ze kitchen',
+          img: 'assets/images/2.jpg',
           date: '20 Mars - Diner',
           jobs: [
             { name: 'Sommelier', nb: '1/2' },
@@ -17,6 +17,7 @@ angular.module('extraMinute')
           ]
         }, {
           name: 'Sola',
+          img: 'assets/images/3.jpg',
           date: '20 Mars - Diner',
           jobs: [
             { name: 'Sommelier', nb: '0/1' },
@@ -24,6 +25,7 @@ angular.module('extraMinute')
           ]
         }, {
           name: 'Maison Blanche',
+          img: 'assets/images/4.jpg',
           date: '21 Mars - Diner',
           jobs: [
             { name: 'Barman', nb: '1/1' },
@@ -32,19 +34,22 @@ angular.module('extraMinute')
           ]
         }, {
           name: 'Petit Sommelier',
+          img: 'assets/images/5.jpg',
           date: '21 Mars - Soirée',
           jobs: [
             { name: 'Service', nb: '0/1' },
             { name: 'Cuisto', nb: '0/1' }
           ]
         }, {
-          name: 'Les Benoit',
+          name: 'Les climats',
+          img: 'assets/images/6.jpg',
           date: '22 Mars - Diner',
           jobs: [
             { name: 'Commis', nb: '1/2' }
           ]
         }, {
           name: 'La Truffière',
+          img: 'assets/images/7.jpg',
           date: '22 Mars - Soirée',
           jobs: [
             { name: 'Sous-chef', nb: '1/1' },
@@ -52,6 +57,7 @@ angular.module('extraMinute')
           ]
         }, {
           name: 'Au fil du Zinc',
+          img: 'assets/images/8.jpg',
           date: '23 Mars - Diner',
           jobs: [
             { name: 'Barman', nb: '0/1' },
@@ -59,6 +65,7 @@ angular.module('extraMinute')
           ]
         }, {
           name: 'Ambassade de Bourgogne',
+          img: 'assets/images/1.jpg',
           date: '24 Mars - Diner',
           jobs: [
             { name: 'Service', nb: '0/1' },
