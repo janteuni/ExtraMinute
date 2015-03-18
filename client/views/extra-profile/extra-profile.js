@@ -6,6 +6,7 @@ angular.module('extraMinute')
       .when('/extra/profile', {
         templateUrl: 'views/extra-profile/extra-profile.html',
         controller: 'ExtraProfileCtrl',
+        navBar: true,
         controllerAs: 'vm'
       });
   });
