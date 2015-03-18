@@ -18,7 +18,7 @@
   width: 100%;
   padding-top: 10%;
   text-align: center;
-  color : $c-green;
+  color : $c-red;
   img {
     margin-bottom: 1em;
   }
@@ -41,7 +41,28 @@
 }
 
 .communication {
+  padding: 4em 0;
+  .com-info {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2em;
+  }
   img {
-    width:100px;
+    width:120px;
+    margin-right: 2em;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .communication {
+    .com-info {
+
+    }
+    img {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
   }
 }
