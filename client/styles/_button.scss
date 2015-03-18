@@ -8,6 +8,7 @@
   color: $c-white;
   padding: .5em 1em;
   outline-color: darken(white, 20);
+  text-decoration: none;
 
   > i {
     margin-right: .5em;
@@ -18,4 +19,10 @@
 .btn-danger {
   @extend .btn;
   background: $c-red;
+}
+
+.btn-success {
+  @extend .btn;
+  background: $c-green-light;
+  color: $c-black;
 }
