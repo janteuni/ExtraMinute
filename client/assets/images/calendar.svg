@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="321px" height="375px" viewBox="0 0 321 375" enable-background="new 0 0 321 375" xml:space="preserve">
+<rect x="3.5" y="135.5" fill="#B5B5B5" stroke="#B5B5B5" stroke-width="6" stroke-miterlimit="10" width="314.59" height="236.089"/>
+<rect x="3.5" y="41.605" fill="#77CCA4" stroke="#77CCA4" stroke-width="6" stroke-miterlimit="10" width="314.59" height="89.492"/>
+<rect x="27" y="157" fill="#E6E6E6" width="56" height="56"/>
+<rect x="96" y="157" fill="#E6E6E6" width="56" height="56"/>
+<rect x="166" y="157" fill="#E6E6E6" width="56" height="56"/>
+<rect x="27" y="228" fill="#E6E6E6" width="56" height="56"/>
+<rect x="96" y="228" fill="#E6E6E6" width="56" height="56"/>
+<rect x="166" y="228" fill="#E6E6E6" width="56" height="56"/>
+<rect x="236" y="157" fill="#E6E6E6" width="56" height="56"/>
+<rect x="236" y="228" fill="#E6E6E6" width="56" height="56"/>
+<rect x="27" y="298" fill="#E6E6E6" width="56" height="56"/>
+<rect x="96" y="298" fill="#E6E6E6" width="56" height="56"/>
+<rect x="166" y="298" fill="#E6E6E6" width="56" height="56"/>
+<rect x="236" y="298" fill="#E6E6E6" width="56" height="56"/>
+<line fill="#B5B5B5" stroke="#B5B5B5" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="88" y1="14.606" x2="88" y2="83"/>
+<line fill="#B5B5B5" stroke="#B5B5B5" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="228" y1="14.606" x2="228" y2="83"/>
+<ellipse fill="#77CCA4" stroke="#77CCA4" stroke-width="6" stroke-miterlimit="10" cx="274.948" cy="197.406" rx="9.635" ry="9.691"/>
+<ellipse fill="#77CCA4" stroke="#77CCA4" stroke-width="6" stroke-miterlimit="10" cx="203.948" cy="266.406" rx="9.636" ry="9.691"/>
+<ellipse fill="#77CCA4" stroke="#77CCA4" stroke-width="6" stroke-miterlimit="10" cx="274.948" cy="266.406" rx="9.636" ry="9.691"/>
+</svg>
