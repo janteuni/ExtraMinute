@@ -1,12 +1,15 @@
 @import "../../styles/utils";
 
 .extra-results {
+  .img-pro {
+    height: 100px;
+  }
+  .img-extra {
+    width: 100%;
+  }
   ul.result {
     li.card {
       overflow: hidden;
-      img {
-        height: 100px;
-      }
       margin-bottom: 1em;
     }
   }
