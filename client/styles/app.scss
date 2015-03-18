@@ -62,9 +62,6 @@ body {
   border: 1px solid white;
   background: darken(white, 2);
   box-shadow: rgba(black, .05) 0 4px 5px;
-  & + .card {
-    margin-top: 1em;
-  }
 }
 
 .card-dark {

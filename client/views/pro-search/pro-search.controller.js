@@ -14,22 +14,24 @@ angular.module('extraMinute')
           name: 'Thomas Dumant',
           img: 'assets/images/faces/2.jpg',
           stars: 4,
-          job: 'Service'
+           jobs: [
+             'Service', 'Sommelier'
+           ]
         }, {
           name: 'Alice Poulis',
           img: 'assets/images/faces/3.jpg',
           stars: 4,
-          job: 'Service'
+          job: ['Service', 'Barman']
         }, {
           name: 'Christine Moh',
           img: 'assets/images/faces/4.jpg',
           stars: 2,
-          job: 'Service'
+          job: ['Service']
         }, {
           name: 'Paul Luanard',
           img: 'assets/images/faces/5.jpg',
           stars: 4,
-          job: 'Sommelier'
+          job: ['Sommelier', 'Service']
         }, {
           name: 'Vincent chomier',
           img: 'assets/images/faces/6.jpg',
@@ -39,7 +41,7 @@ angular.module('extraMinute')
           name: 'Delphine Plusis',
           img: 'assets/images/faces/7.jpg',
           stars: 3,
-          job: 'Sommelier'
+          job: ['Sommelier']
         }, {
           name: 'Marc Lotus',
           img: 'assets/images/faces/11.jpg',
