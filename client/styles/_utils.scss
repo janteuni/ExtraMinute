@@ -10,6 +10,11 @@
   margin-bottom: 1em;
 }
 
+.marged-right {
+  margin-right: 1em;
+}
+
+
 .text-center {
   text-align: center;
 }
@@ -20,4 +25,20 @@
 
 .is-transparent {
   opacity: 0;
+}
+
+.c-green {
+  color: $c-green;
+}
+
+.c-blue {
+  color: $c-blue;
+}
+
+.c-red {
+  color: $c-red;
+}
+
+em {
+  font-weight: bolder;
 }

@@ -1,0 +1,53 @@
+@import "../../styles/utils";
+
+.extra-results {
+  ul.result {
+    li.card {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100px;
+      }
+      margin-bottom: 1em;
+    }
+  }
+  .infos {
+    margin: 1em;
+    .jobs {
+      height: 260px;
+    }
+    h2 {
+      font-family: 'Advent Pro', sans-serif;
+      font-weight: 600;
+      font-size: 1.6em;
+      line-height: 1em;
+    }
+    table {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 100%;
+      td {
+        vertical-align: middle;
+        font-size: 16px;
+      }
+      td.w-10 {
+        width: 10%;
+        i {
+          font-size: 35px;
+          display: block;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+        }
+      }
+      td.w-20 {
+        width: 20%;
+      }
+      td.w-70 {
+        width: 70%;
+        padding: .5em 0 .5em 1em;
+      }
+    }
+  }
+}

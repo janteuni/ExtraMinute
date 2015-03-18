@@ -47,10 +47,10 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 2em;
-  }
-  img {
-    width:120px;
-    margin-right: 2em;
+    img {
+      width:120px;
+      margin-right: 2em;
+    }
   }
 }
 
@@ -58,11 +58,10 @@
 @media screen and (max-width: 800px) {
   .communication {
     .com-info {
-
-    }
-    img {
-      margin-top: 1em;
-      margin-bottom: 1em;
+      img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
     }
   }
 }

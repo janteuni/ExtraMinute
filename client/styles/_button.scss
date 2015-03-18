@@ -21,6 +21,12 @@
 
 }
 
+.btn-block {
+  width: 100%;
+  display: block;
+  box-shadow: none;
+}
+
 .btn-danger {
   @extend .btn;
   background: $c-red;
@@ -30,4 +36,10 @@
   @extend .btn;
   background: $c-green-light;
   color: $c-black;
+}
+
+.btn-info {
+  @extend .btn;
+  background: $c-blue;
+  color: white;
 }

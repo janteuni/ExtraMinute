@@ -1,0 +1,36 @@
+<section class="extra-results">
+  <ul class="result row">
+    <li class="card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
+      <img src="assets/images/hotellerie-restauration.jpg" alt=""/>
+
+      <div class="infos">
+        <div class="jobs">
+          <h2 class="text-center">{{result.name}}</h2>
+          <table>
+            <tr ng-repeat="job in result.jobs">
+              <td class="w-10">
+                <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
+                <i ng-if="job.name == 'Cuisto' " class="icon-couvert"></i>
+                <i ng-if="job.name == 'Sous-chef' " class="icon-toque"></i>
+                <i ng-if="job.name == 'Service' " class="icon-clo"></i>
+                <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
+                <i ng-if="job.name == 'Commis' " class="icon-cut"></i>
+              </td>
+              <td class="w-70">
+                <p>{{job.name}}</p>
+              </td>
+              <td class="w-20" align="right">
+                <em class="c-blue">{{job.nb}}</em>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="text-center"><em class="c-red"><i class="icon-calendar marged-right"></i>{{result.date}}</em></p>
+      </div>
+      <footer>
+        <button class="btn-info btn-block">Postuler</button>
+      </footer>
+    </li>
+  </ul>
+</section>
