@@ -1,7 +1,31 @@
 @import "variables";
+@import "utils";
 
 body {
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: $fontsize;
+  line-height: 1.5em;
   font-weight: 200;
+  color: $c-black;
+  background-color: $c-white;
+}
+
+.title {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.viewport {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.view {
+  flex: 1;
+}
+
+.main-footer {
+  background: $c-black;
 }
