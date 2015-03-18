@@ -1,3 +1,4 @@
+@import "../views/login/login";
 @import "variables";
 @import "utils";
 @import "form";
@@ -43,4 +44,13 @@ body {
 .panel-dark {
   background: rgba($c-black, .2);
   box-shadow: rgba($c-black, .3) 0 -1px 4px inset;
+}
+
+a {
+  text-decoration: none;
+  color: $c-green;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
 }

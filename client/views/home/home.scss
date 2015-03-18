@@ -4,6 +4,11 @@
   position: absolute;
   top: 2rem;
   right: 1.5rem;
+  a.small {
+    color: $c-white;
+    font-size: 16px;
+    margin-right: 1rem;
+  }
 }
 
 .home-banner {
