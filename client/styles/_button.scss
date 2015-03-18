@@ -1,0 +1,21 @@
+@import "variables";
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: $c-black;
+  color: $c-white;
+  padding: .5em 1em;
+  outline-color: darken(white, 20);
+
+  > i {
+    margin-right: .5em;
+  }
+
+}
+
+.btn-danger {
+  @extend .btn;
+  background: $c-red;
+}

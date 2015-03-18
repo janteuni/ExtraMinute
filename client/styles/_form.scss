@@ -1,0 +1,31 @@
+@import "variables";
+
+.form-group {
+  > label {
+    font-weight: 400;
+    color: $c-blue;
+  }
+
+  & + .form-group {
+    margin-top: 1rem;
+  }
+}
+
+.form-control {
+  padding: .5em;
+  font: inherit;
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  background: white;
+  transition: 100ms ease-out box-shadow;
+
+  &:hover {
+    border-color: rgba($c-black, .2);
+  }
+
+  &:focus {
+    border-color: rgba($c-black, .2);
+    box-shadow: rgba($c-black, .2) 0 3px 3px;
+  }
+}

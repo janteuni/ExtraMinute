@@ -1,5 +1,8 @@
 @import "variables";
 @import "utils";
+@import "form";
+@import "button";
+
 @import "../views/home/home";
 
 body {
@@ -8,7 +11,7 @@ body {
   line-height: 1.5em;
   font-weight: 200;
   color: $c-black;
-  background-color: $c-white;
+  background-color: darken(white, 10);
 }
 
 .title {
@@ -29,4 +32,15 @@ body {
 
 .main-footer {
   background: $c-black;
+}
+
+.card {
+  border: 1px solid white;
+  background: darken(white, 2);
+  box-shadow: rgba(black, .05) 0 4px 5px;
+}
+
+.panel-dark {
+  background: rgba($c-black, .2);
+  box-shadow: rgba($c-black, .3) 0 -1px 4px inset;
 }
