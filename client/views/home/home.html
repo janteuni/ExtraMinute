@@ -1,39 +1,48 @@
-<div class="home-actions">
-  <a class="small" href="/signup">creer un compte</a>
-  <a class="btn-success" href="/login">
-    <i class="ion-person"></i>
-    Connexion
-  </a>
-</div>
+<div class="fade-out" ng-class=" { 'is-transparent': vm.transparent }">
 
-<section class="home-banner">
-  <img src="assets/images/logo_white.png" alt=""/>
-  <div class="home-slogan">
-    <h1>Extra Minute''</h1>
-    <h3>
-      Vous avez une minute? Ils ont le potentiel.<br/>
-      Laissez-les sauver vos soirées.
-    </h3>
+  <div class="home-actions">
+    <a class="small" href="/signup">creer un compte</a>
+    <button class="btn-success" ng-click="vm.navigate('/login')">
+      <i class="ion-person"></i>
+      Connexion
+    </button>
   </div>
 
-</section>
+  <section class="home-banner">
+    <img src="assets/images/logo_white.png" alt=""/>
+
+    <div class="home-slogan">
+      <h1>Extra Minute''</h1>
+
+      <h3>
+        Vous avez une minute? Ils ont le potentiel.<br/>
+        Laissez-les sauver vos soirées.
+      </h3>
+    </div>
+
+  </section>
 
 
-<section class="communication">
-  <div class="row">
-    <div class="all-full">
-      <div class="com-info">
-        <img src="assets/images/chrono.svg" alt=""/>
-        <p>Un imprévu de derniere minute ? <br> Trouvez votre aide extraordinaire.</p>
-      </div>
-      <div class="com-info">
-        <img src="assets/images/perso-2.svg" alt=""/>
-        <p>Libre ce soir ? <br> Que diriez-vous de gagner votre soirée</p>
-      </div>
-      <div class="com-info">
-        <img src="assets/images/calendar.svg" alt=""/>
-        <p>Prévoyez à l'avance vos aides extraordinaires.</p>
+  <section class="communication">
+    <div class="row">
+      <div class="all-full">
+        <div class="com-info">
+          <img src="assets/images/chrono.svg" alt=""/>
+
+          <p>Un imprévu de derniere minute ? <br> Trouvez votre aide extraordinaire.</p>
+        </div>
+        <div class="com-info">
+          <img src="assets/images/perso-2.svg" alt=""/>
+
+          <p>Libre ce soir ? <br> Que diriez-vous de gagner votre soirée</p>
+        </div>
+        <div class="com-info">
+          <img src="assets/images/calendar.svg" alt=""/>
+
+          <p>Prévoyez à l'avance vos aides extraordinaires.</p>
+        </div>
       </div>
     </div>
-    </div>
-</section>
+  </section>
+
+</div>

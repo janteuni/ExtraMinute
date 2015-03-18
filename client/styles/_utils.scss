@@ -13,3 +13,11 @@
 .text-center {
   text-align: center;
 }
+
+.fade-out {
+  transition: 300ms ease-in opacity;
+}
+
+.is-transparent {
+  opacity: 0;
+}
