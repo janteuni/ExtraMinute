@@ -14,13 +14,13 @@
           <span class="badge-blue">12</span>
         </button>
         <button class="nav-item">
-          <i class="ion-person"></i>
-          <span>Profil</span>
-        </button>
-        <button class="nav-item">
           <i class="ion-ios-email"></i>
           <span>Messages</span>
           <span class="badge-red">4</span>
+        </button>
+        <button class="nav-item">
+          <i class="ion-person"></i>
+          <span>Profil</span>
         </button>
         <button class="nav-item spaced">
           <i class="ion-log-out"></i>
@@ -34,14 +34,44 @@
   <div class="desktop-9 tablet-4 mobile-full">
 
     <div class="card pad">
-      <h2 class="title flow">onetuh euhone</h2>
-      <p class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur, cumque earum esse fuga in ipsam ipsum magnam minima, natus nobis optio praesentium quidem repellat ullam vel voluptatum! Aliquid, quod.</p>
-      <h2 class="title flow">onetuh euhone</h2>
-      <p class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur, cumque earum esse fuga in ipsam ipsum magnam minima, natus nobis optio praesentium quidem repellat ullam vel voluptatum! Aliquid, quod.</p>
-      <h2 class="title flow">onetuh euhone</h2>
-      <p class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur, cumque earum esse fuga in ipsam ipsum magnam minima, natus nobis optio praesentium quidem repellat ullam vel voluptatum! Aliquid, quod.</p>
-      <h2 class="title flow">onetuh euhone</h2>
-      <p class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur, cumque earum esse fuga in ipsam ipsum magnam minima, natus nobis optio praesentium quidem repellat ullam vel voluptatum! Aliquid, quod.</p>
+      <h2 class="title flow text-center">Infos</h2>
+
+      <form ng-submit="vm.save()" class="flow">
+
+        <div class="form-group">
+          <label for="inputName">Nom & Prenom :</label>
+          <input id="inputName" type="text" class="form-control" placeholder="Nom / Prenom"/>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail">Adresse mail :</label>
+          <input id="inputEmail" type="text" class="form-control" placeholder="Email"/>
+        </div>
+
+        <div class="form-group">
+          <label for="inputPhone">Telephone :</label>
+          <input id="inputPhone" type="text" class="form-control" placeholder="Telephone"/>
+        </div>
+
+        <div class="form-group">
+          <label for="inputBirth">Date de naissance :</label>
+          <input id="inputBirth" type="text" class="form-control" placeholder="YYYY-MM-DD"/>
+        </div>
+
+        <div class="form-group text-right">
+          <button type="submit" class="btn">
+            <i class="ion-checkmark"></i>
+            Enregistrer
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="card pad text-center">
+      <h2 class="title flow">CV</h2>
+      <p class="flow">On s'en branle de ton CV.</p>
     </div>
 
   </div>

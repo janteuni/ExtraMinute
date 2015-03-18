@@ -11,6 +11,12 @@
 @import "../views/login/login";
 @import "../views/home/home";
 
+::-webkit-input-placeholder { color: rgba(black, .3); }
+::-moz-placeholder { color: rgba(black, .3); } /* firefox 19+ */
+:-ms-input-placeholder { color: rgba(black, .3); } /* ie */
+input:-moz-placeholder { color: rgba(black, .3); }
+
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: $fontsize;
@@ -56,6 +62,9 @@ body {
   border: 1px solid white;
   background: darken(white, 2);
   box-shadow: rgba(black, .05) 0 4px 5px;
+  & + .card {
+    margin-top: 1em;
+  }
 }
 
 .card-dark {
