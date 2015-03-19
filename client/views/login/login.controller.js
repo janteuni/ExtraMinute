@@ -57,7 +57,12 @@ angular.module('extraMinute')
       },
       mockup: function (type) {
         vm.user = ({
-          extra: $rootScope.user,
+          extra: {
+            email: 'jean.bon@gmail.com',
+            password: 'yolo',
+            type: 'extra',
+            image: 'assets/images/faces/6.jpg'
+          },
           resto: {
             email: 'alain.ducasse@wanadoo.fr',
             password: 'yolooentuhonetuoenoesuhoentuhoesunoethsuoen',

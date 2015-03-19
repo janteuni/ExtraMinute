@@ -22,10 +22,7 @@ angular.module('extraMinute', [
     };
 
     $rootScope.user = {
-      email: 'jean.bon@gmail.com',
-      password: 'yolo',
-      type: 'extra',
-      image: 'assets/images/faces/6.jpg'
+      type: 'resto'
     };
 
     $rootScope.$on('$routeChangeSuccess', function (e, route) {

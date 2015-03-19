@@ -19,6 +19,22 @@
       <span>Calendrier</span>
     </a>
 
+    <a href="/pro/offers"
+       ng-show="isResto()"
+       class="nav-item"
+       active-when="/pro/offers">
+      <i class="ion-ios-list"></i>
+      <span>Offres</span>
+    </a>
+
+    <a href="/pro/profile"
+       ng-show="isResto()"
+       class="nav-item"
+       active-when="/pro/profile">
+      <i class="ion-wineglass"></i>
+      <span>Etablissement</span>
+    </a>
+
     <a href="/messages" class="nav-item" active-when="/messages">
       <i class="ion-ios-email"></i>
       <span>Messages</span>
@@ -29,7 +45,7 @@
 
     <a href="/extra/profile"
        class="nav-item"
-       ng-show="isResto()"
+       ng-show="isExtra()"
        active-when="/extra/profile">
       <i class="ion-person"></i>
       <span>Profil</span>
