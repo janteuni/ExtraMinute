@@ -22,6 +22,20 @@
         <div class="flow pad-v">
           <strong class="c-red">{{offer.date}}</strong>
         </div>
+        <div class="marged-bot">
+          <div class="post-offer" ng-repeat="post in offer.posts">
+            <p>
+              <i ng-if="post.name == 'Sommelier' " class="icon-bottle c-blue"></i>
+              <i ng-if="post.name == 'Plongeur' " class="icon-couvert c-blue"></i>
+              <i ng-if="post.name == 'Cuisinier' " class="icon-toque c-blue"></i>
+              <i ng-if="post.name == 'Serveur' " class="icon-clo c-blue"></i>
+              <i ng-if="post.name == 'Barman' " class="icon-glass c-blue"></i>
+
+              {{post.nb}}
+              {{post.name}}
+            </p>
+          </div>
+        </div>
         <button class="btn-sm-round">
           <i class="ion-ios-search-strong"></i>
           Rechercher des candidatures
@@ -37,7 +51,8 @@
                 {{job.name}}
                 <em class="extra-name"> {{job.extra}} </em>
                 <i ng-if="job.status == 'asked' " class="ion-clock flex-auto-end"></i>
-                <i ng-click="vm.selectOffer()" ng-if="job.status == 'confirmed' " class="ion-checkmark interact flex-auto-end"></i>
+                <i ng-click="vm.selectOffer()" ng-if="job.status == 'confirmed' "
+                   class="ion-checkmark interact flex-auto-end"></i>
                 <i ng-if="job.status == 'booked' " class="ion-locked  flex-auto-end c-green"></i>
                 <i ng-if="job.status == 'waiting' " class="ion-clock flex-auto-end"></i>
               </p>
@@ -49,4 +64,4 @@
 
     </div>
   </div>
- </div>
+</div>

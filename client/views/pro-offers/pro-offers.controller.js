@@ -24,6 +24,10 @@ angular.module('extraMinute')
         {
           date: '20 Mars - Diner',
           status: 'available',
+          posts : [
+            { name: 'Sommelier', nb: 1},
+            { name: 'Cuisinier', nb: 1}
+          ],
           jobs: [
             {
               name: 'Cuisto',
@@ -50,6 +54,9 @@ angular.module('extraMinute')
         {
           date: '21 Mars - Diner',
           status: 'available',
+          posts : [
+            { name: 'Sommelier', nb: 2}
+          ],
           jobs: [
             {
               name: 'Sommelier',
