@@ -52,13 +52,36 @@
   </div>
 </modal>
 
+<modal yolo="vm.shittyModal">
+  <div class="modal m-2">
+    <div ng-click="vm.shittyModal = false" class="close ion-close-round"></div>
+    <div class="marged-bot">
+      <strong style="font-weight: 400">Nouvelle offre</strong>
+    </div>
+    <form ng-submit="vm.addOffer()">
+
+      <div class="form-group">
+        <label for="">Quoi ?</label>
+        <textarea class="form-control visible"
+                  placeholder="Description"/>
+      </div>
+
+      <div class="form-group">
+        <label for="">Quand ?</label>
+        <input type="date" class="form-control visible"/>
+      </div>
+
+    </form>
+  </div>
+</modal>
+
 <div class="row offers-list">
 
   <div class="all-full">
 
     <header class="big-title">
 
-      <button class="btn-info float-right small">
+      <button class="btn-info float-right small" ng-click="vm.shittyModal = true">
         <i class="ion-plus-circled"></i>
         Nouvelle offre
       </button>
@@ -90,10 +113,10 @@
             </p>
           </div>
         </div>
-        <button class="btn-sm-round">
+        <a class="btn-sm-round" href="/extra/search" style="width: 254px">
           <i class="ion-ios-search-strong"></i>
           Rechercher des candidatures
-        </button>
+        </a>
       </div>
 
       <div class="all-full desktop-half">

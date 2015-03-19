@@ -22,6 +22,9 @@
   border: 1px solid transparent;
   background: white;
   transition: 100ms ease-out box-shadow;
+  &.visible {
+    border-color: rgba($c-black, .2);
+  }
 
   &:hover {
     border-color: rgba($c-black, .2);

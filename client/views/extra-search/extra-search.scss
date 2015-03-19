@@ -18,7 +18,7 @@
         border-color: $c-blue;
       }
       &.is-waiting {
-        opacity: .5;
+        opacity: .5 !important;
       }
     }
   }

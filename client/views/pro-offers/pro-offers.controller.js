@@ -15,6 +15,7 @@ angular.module('extraMinute')
       stars : function(num) {
         vm.tabStars[num] = true;
       },
+      shittyModal: true,
       selectOffer: function() {
         vm.offers[0].jobs[1].status = 'booked';
         vm.offers[0].jobs.splice(2);

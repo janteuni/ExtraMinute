@@ -59,7 +59,7 @@ angular.module('extraMinute')
           TweenMax.set(shadow, { opacity: 0 });
 
           new TimelineMax()
-            .to(shadow, 0.5, { opacity: 1 })
+            .to(shadow, 0.5, { opacity: 1, ease: 'Back.easeOut' })
             .to(modal, 0.5, { opacity: 1, y: 0, delay: -0.5, scale: 1, ease: 'Back.easeOut' });
 
         }
