@@ -12,6 +12,7 @@ angular.module('extraMinute')
         var modal = element.find('.modal-container');
         var shadow = element.find('.modal-shadow');
         var ota = element.find('.modal-content');
+        var transclude = element.find('ng-transclude');
 
         shadow.hide();
         modal.hide();
@@ -30,7 +31,10 @@ angular.module('extraMinute')
           scope.$apply();
         });
 
-        ota.on('click', function () {
+        ota.on('click', function (e) {
+          if (!angular.element(e.target).is(transclude)){
+            return;
+          }
           hideModal();
           scope.trigger = false;
           scope.$apply();

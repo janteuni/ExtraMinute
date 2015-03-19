@@ -1,6 +1,6 @@
 <modal yolo="vm.showmodal">
   <div class="modal">
-    <div class="close ion-close-round"></div>
+    <div ng-click="vm.showmodal = false" class="close ion-close-round"></div>
     <img src="assets/images/gm.jpg" alt=""/>
     <h2 class="title marged-bot">La truffières</h2>
     <p><i class="ion-location"></i> Paris</p>
@@ -51,7 +51,7 @@
 
       <button class="round-right" ng-click="vm.afficheModal($event)"><i class="ion-eye"></i></button>
 
-      <img class="img-pro" src="{{result.img}}" alt=""/>
+      <img class="img-pro" ng-src="{{result.img}}" alt=""/>
 
       <div class="infos text-center">
         <div ng-show="result.status == 'available'" class="asked marged-bot">
