@@ -8,22 +8,22 @@
 
         <div class="form-group">
           <label for="inputName">Personne à contacter :</label>
-          <input id="inputName" type="text" class="form-control" placeholder="Nom / Prenom"/>
+          <input id="inputName" value="Mr Benoit" type="text" class="form-control" placeholder="Nom / Prenom"/>
         </div>
 
         <div class="form-group">
           <label for="inputEmail">Adresse mail :</label>
-          <input id="inputEmail" type="text" class="form-control" placeholder="Email"/>
+          <input id="inputEmail" value="contact@benoit.com" type="text" class="form-control" placeholder="Email"/>
         </div>
 
         <div class="form-group">
           <label for="inputPhone">Telephone :</label>
-          <input id="inputPhone" type="text" class="form-control" placeholder="Telephone"/>
+          <input id="inputPhone" value="068914566" type="text" class="form-control" placeholder="Telephone"/>
         </div>
 
         <div class="form-group">
           <label for="inputAdress">Adresse :</label>
-          <input id="inputAdress" type="text" class="form-control" placeholder="Adresse"/>
+          <input id="inputAdress" value="20, rue Saint Martin 75004 Paris" type="text" class="form-control" placeholder="Adresse"/>
         </div>
 
         <div class="form-group text-right">
@@ -38,22 +38,23 @@
     </div>
 
     <div class="card pad flow">
-      <h2 class="title flow text-center">L'établissement</h2>
-      <form ng-submit="vm.save()" class="flow">
+      <h2 class="title flow text-center marged-bot">L'établissement</h2>
+      <img class="image-restau" src="assets/images/benoit.jpg" alt=""/>
 
+      <form ng-submit="vm.save()" class="flow">
         <div class="form-group">
           <label for="inputBuis">Nom de l'établissement :</label>
-          <input id="inputBuis" type="text" class="form-control" placeholder="Nom de l'établissement"/>
+          <input id="inputBuis" type="text" value="Benoit" class="form-control" placeholder="Nom de l'établissement"/>
         </div>
 
         <div class="form-group">
           <label for="inputBuis">Lien vers le site internet :</label>
-          <input id="inputBuis" type="text" class="form-control" placeholder="Site internet"/>
+          <input id="inputBuis" type="text" value="http://www.benoit-paris.com" class="form-control" placeholder="Site internet"/>
         </div>
 
         <div class="form-group">
           <label for="inputCouv">Nombre de couverts :</label>
-          <input id="inputCouv" type="text" class="form-control" placeholder="Nombre de couverts"/>
+          <input id="inputCouv" value="180" type="text" class="form-control" placeholder="Nombre de couverts"/>
         </div>
 
         <div class="form-group">

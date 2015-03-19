@@ -6,7 +6,6 @@ angular.module('extraMinute')
     var vm = this;
 
     angular.extend(vm, {
-      name: 'ProProfileCtrl'
     });
 
   });
