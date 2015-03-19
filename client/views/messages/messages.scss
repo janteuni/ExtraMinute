@@ -1,3 +1,17 @@
 /**
  * messages.scss
  */
+
+.message-pic {
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid white;
+  }
+  margin-right: 2em;
+}
+
+.message-content {
+  width: 500px;
+}
