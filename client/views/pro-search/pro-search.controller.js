@@ -1,9 +1,16 @@
 'use strict';
 
 angular.module('extraMinute')
-  .controller('ProSearchCtrl', function () {
+  .controller('ProSearchCtrl', function ($scope) {
 
     var vm = this;
+
+    $scope.settings = {
+      closeEl: '.close',
+      modal: {
+        templateUrl: 'views/pro-search/modal.html'
+      }
+    };
 
     angular.extend(vm, {
       all : false,

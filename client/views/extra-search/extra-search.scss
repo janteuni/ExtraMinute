@@ -78,3 +78,49 @@ table.table-jobs {
     padding: .5em 0 .5em 1em;
   }
 }
+
+.modal {
+  position: relative;
+  background-color: white;
+  padding: .8em;
+  width: 440px;
+  height: 700px;
+  img {
+    width: 100%;
+  }
+  .desc {
+    font-size: 18px;
+    line-height: 1em;
+    margin-bottom: 1em;
+  }
+  .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: $c-red;
+    color: white;
+    border-radius: 100%;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+  }
+}
+
+.m-2 {
+  width: 800px;
+  height: 720px;
+  .picture {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+  .avis {
+    border: 1px solid $c-black;
+    padding: .5em;
+    font-size: .8em;
+  }
+  .info {
+    width: 50%;
+  }
+}

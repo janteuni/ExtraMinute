@@ -52,7 +52,8 @@
   <ul class="result row flow">
     <li class="card desktop-3 tablet-2 mobile-full" ng-repeat="result in vm.results" ng-class="{'is-selected': result.select}" ng-click="vm.select($index)">
 
-      <button ng-click="vm.showProfile($event)" class="round-right"><i class="ion-eye"></i></button>
+      <button ng-if="result.name == 'Alice Poulis'" ng-morph-modal="settings" class="round-right"><i class="ion-eye"></i></button>
+      <button ng-if="result.name != 'Alice Poulis'"  class="round-right"><i class="ion-eye"></i></button>
       <button ng-if="result.status != 'available'" class="tag-left">
       <span ng-if="result.status == 'asked'">en attente</span>
       <span ng-if="result.status == 'confirmed'">confirmé</span>

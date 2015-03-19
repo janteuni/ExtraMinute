@@ -10,6 +10,9 @@
 <section class="extra-results">
   <ul class="result row">
     <li ng-class="{'is-waiting': result.status == 'waiting'}" class="card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
+
+      <button ng-if="result.name == 'La Truffière'" ng-morph-modal="settings" class="round-right"><i class="ion-eye"></i></button>
+      <button ng-if="result.name != 'La Truffière'"  class="round-right"><i class="ion-eye"></i></button>
       <img class="img-pro" src="{{result.img}}" alt=""/>
 
       <div class="infos text-center">

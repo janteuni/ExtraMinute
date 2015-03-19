@@ -1,7 +1,14 @@
 'use strict';
 
 angular.module('extraMinute')
-  .controller('ExtraSearchCtrl', function () {
+  .controller('ExtraSearchCtrl', function ($scope) {
+
+    $scope.settings = {
+      closeEl: '.close',
+      modal: {
+        templateUrl: 'views/extra-search/modal.html'
+      }
+    };
 
     var vm = this;
 
