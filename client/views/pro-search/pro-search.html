@@ -84,24 +84,25 @@
         <em>{{vm.offer.date}}</em>
       </p>
       <p class="marged-bot">{{vm.offer.desc}}</p>
-      <table class="table-jobs">
-        <tr ng-repeat="job in vm.offer.jobs">
-          <td class="w-5" align="center">
+      <div>
+
+        <div class="yolo-flex" ng-repeat="job in vm.offer.jobs">
+          <div>
             <em class="c-blue">{{job.nb}}</em> x
-          </td>
-          <td class="w-10">
+          </div>
+          <div>
             <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
             <i ng-if="job.name == 'Plongeur' " class="icon-couvert"></i>
             <i ng-if="job.name == 'Cuisinier' " class="icon-toque"></i>
             <i ng-if="job.name == 'Serveur' " class="icon-clo"></i>
             <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
-          </td>
-          <td class="w-70">
+          </div>
+          <div>
             <p>{{job.name}}</p>
-          </td>
+          </div>
+        </div>
 
-        </tr>
-      </table>
+      </div>
 
     </div>
     <header class="big-title">
