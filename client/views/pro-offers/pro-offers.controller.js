@@ -6,6 +6,15 @@ angular.module('extraMinute')
     var vm = this;
 
     angular.extend(vm, {
+      activateModal: function (event) {
+        event.stopPropagation();
+        vm.showmodal = true;
+      },
+      activ : false,
+      tabStars: [false, false, false, false],
+      stars : function(num) {
+        vm.tabStars[num] = true;
+      },
       selectOffer: function() {
         vm.offers[0].jobs[1].status = 'booked';
         vm.offers[0].jobs.splice(2);

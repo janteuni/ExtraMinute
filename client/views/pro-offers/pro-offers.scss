@@ -41,12 +41,52 @@
 }
 
 .post-offer {
-
   p {
     font-size: 18px;
     i {
       margin-right: 1em;
       font-size: 21px;
+    }
+  }
+}
+
+.m-avis {
+  h1 {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+  table {
+    td {
+      padding: .5em ;
+    }
+    margin: 0 auto 2em auto;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  .select-it {
+    padding: .3em;
+    margin-right: .5em;
+    border: 1px solid rgba($c-black, .3);
+    color: rgba($c-black, .3);
+    &:hover {
+      background-color: rgba($c-black, .3);
+      color: white;
+    }
+    &.is-active {
+      background-color: rgba($c-black, .3);
+      color: white;
+    }
+  }
+  i {
+    color: rgba($c-black, .4);
+    &:hover {
+      color: $c-yellow;
+    }
+    &.is-active {
+      color: $c-yellow;
     }
   }
 }

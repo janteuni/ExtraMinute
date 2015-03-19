@@ -45,9 +45,6 @@ angular.module('extraMinute')
           }
         }
       },
-      showProfile: function(event) {
-        event.stopPropagation();
-      },
       offer: {
         name:'Les Benoits',
         date: '19 Mars - Soirée',

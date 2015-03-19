@@ -1,3 +1,57 @@
+<modal yolo="vm.showmodal">
+  <div class="modal m-2 m-avis">
+    <div class="close ion-close-round" ng-click="vm.showmodal = false"></div>
+      <h1 class="title marged-bot">Votre avis concernant Jean Bon</h1>
+    <table align="center">
+      <tr>
+        <td>Extra Présent</td>
+        <td>
+          <span ng-click="vm.activ = !vm.activ" ng-class="{'is-active': vm.activ == false}" class="select-it">oui</span>
+          <span ng-click="vm.activ = !vm.activ"  ng-class="{'is-active': vm.activ == true}"  class="select-it">non</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Assiduité </td>
+        <td ng-click ="vm.stars(0)">
+          <i ng-class="{'is-active': vm.tabStars[0] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[0] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[0] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[0] == true}" class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i></td>
+      </tr>
+      <tr>
+        <td >Présentation  </td>
+        <td ng-click ="vm.stars(1)">
+          <i ng-class="{'is-active': vm.tabStars[1] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[1] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[1] == true}" class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Efficacité   </td>
+          <td ng-click ="vm.stars(2)"><i ng-class="{'is-active': vm.tabStars[2] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[2] == true}" class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i></td>
+      </tr>
+      <tr>
+        <td>Note globale   </td>
+        <td ng-click ="vm.stars(3)">
+          <i ng-class="{'is-active': vm.tabStars[3] == true}" class="stars-select ion-ios-star"></i>
+          <i ng-class="{'is-active': vm.tabStars[3] == true}" class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i>
+          <i class="stars-select ion-ios-star"></i></td>
+      </tr>
+    </table>
+    <button class="btn-info">Valider mon avis</button>
+  </div>
+</modal>
+
 <div class="row offers-list">
 
   <div class="all-full">
@@ -9,7 +63,7 @@
         Nouvelle offre
       </button>
 
-      <h2><i class="ion-ios-list-outline"></i>Mes offres</h2>
+      <h2 ng-click="vm.activateModal($event)"><i class="ion-ios-list-outline"></i>Mes offres</h2>
 
     </header>
 
