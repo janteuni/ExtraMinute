@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('extraMinute')
-  .controller('LoginCtrl', function ($location, $scope) {
+  .controller('LoginCtrl', function ($location, $scope, $rootScope) {
 
     var vm = this;
 
@@ -31,20 +31,54 @@ angular.module('extraMinute')
     // vm
 
     angular.extend(vm, {
+      user: {},
+      usedMockup: false,
       login: function () {
         var t = new TimelineMax();
+
+        if (!vm.usedMockup) {
+          t
+            .to(demoResto, 0.25, { x: '-110%', opacity: 0, ease: 'Back.easeIn' })
+            .to(demoExtra, 0.25, { x: '-110%', opacity: 0, delay: -0.15, ease: 'Back.easeIn' });
+        }
         t
-          .to(demoResto, 0.25, { x: '-110%', opacity: 0, ease: 'Back.easeIn' })
-          .to(demoExtra, 0.25, { x: '-110%', opacity: 0, delay: -0.15, ease: 'Back.easeIn' })
           .to(back, 0.25, { y: -30, opacity: 0 })
           .to(box, .5, { y: 30, opacity: 0, delay: -0.1 })
           .to(loader, 0.25, { scale: 1, opacity: 1, delay: -0.5, ease: 'Back.easeOut' })
           .to(loader, 0.25, { opacity: 0, y: 30, delay: 0.5, ease: 'Back.easeIn' })
           .to(header, 0.25, { opacity: 0, y: 30, delay: -0.25 })
           .addCallback(function () {
-            $location.path('/extra/slots');
+            $location.path(({
+              extra: '/extra/slots',
+              resto: '/pro/offers'
+            })[$rootScope.user.type]);
             $scope.$apply();
           });
+      },
+      mockup: function (type) {
+        vm.user = ({
+          extra: $rootScope.user,
+          resto: {
+            email: 'alain.ducasse@wanadoo.fr',
+            password: 'yolooentuhonetuoenoesuhoentuhoesunoethsuoen',
+            type: 'resto',
+            image: 'assets/images/mockupresto.jpg'
+          }
+        })[type];
+        $rootScope.user = vm.user;
+        (({
+          extra: function () {
+            new TimelineMax()
+              .to(demoExtra, 0.25, { x: '-110%', opacity: 0, ease: 'Back.easeIn' })
+              .to(demoResto, 0.25, { x: '-110%', opacity: 0, delay: -0.15, ease: 'Back.easeIn' });
+          },
+          resto: function () {
+            new TimelineMax()
+              .to(demoResto, 0.25, { x: '-110%', opacity: 0, ease: 'Back.easeIn' })
+              .to(demoExtra, 0.25, { x: '-110%', opacity: 0, delay: -0.15, ease: 'Back.easeIn' });
+          }
+        })[type])();
+        vm.usedMockup = true;
       }
     });
 

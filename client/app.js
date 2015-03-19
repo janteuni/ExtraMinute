@@ -21,8 +21,23 @@ angular.module('extraMinute', [
       navBar: false
     };
 
+    $rootScope.user = {
+      email: 'jean.bon@gmail.com',
+      password: 'yolo',
+      type: 'extra',
+      image: 'assets/images/faces/6.jpg'
+    };
+
     $rootScope.$on('$routeChangeSuccess', function (e, route) {
       $rootScope.ui.navBar = !!route.$$route.navBar;
     });
+
+    $rootScope.isExtra = function () {
+      return $rootScope.user.type === 'extra';
+    };
+
+    $rootScope.isResto = function () {
+      return $rootScope.user.type === 'resto';
+    };
 
   });

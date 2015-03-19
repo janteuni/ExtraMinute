@@ -17,11 +17,11 @@
       <div class="scene">
 
         <div class="mockup">
-          <button class="btn">
+          <button class="btn" ng-click="vm.mockup('extra')">
             <i class="ion-person"></i>
             Compte demo extra
           </button>
-          <button class="btn">
+          <button class="btn" ng-click="vm.mockup('resto')">
             <i class="ion-person"></i>
             Compte demo restaurant
           </button>
@@ -29,21 +29,27 @@
 
         <div class="card pad">
 
-          <form ng-submit="vm.login()">
+          <form ng-submit="vm.login()" name="form">
 
             <div class="form-group">
               <input class="form-control"
                      focus-me="true"
+                     required
+                     ng-model="vm.user.email"
                      type="text"
                      placeholder="Adresse mail"/>
             </div>
 
             <div class="form-group">
-              <input class="form-control" type="password" placeholder="Mot de passe"/>
+              <input class="form-control"
+                     type="password"
+                     required
+                     ng-model="vm.user.password"
+                     placeholder="Mot de passe"/>
             </div>
 
             <div class="form-group">
-              <button class="btn">
+              <button class="btn" ng-disabled="form.$invalid">
                 <i class="ion-power"></i>
                 Connexion
               </button>

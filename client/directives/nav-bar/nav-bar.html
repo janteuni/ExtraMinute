@@ -1,7 +1,7 @@
 <div class="card-dark nav-bar">
 
   <header>
-    <img class="nav-bar--profile-pic" src="assets/images/faces/6.jpg" alt=""/>
+    <img class="nav-bar--profile-pic" ng-src="{{ user.image }}" alt=""/>
   </header>
 
   <nav>
@@ -11,7 +11,10 @@
       <span>Rechercher</span>
     </a>
 
-    <a href="/extra/slots" class="nav-item" active-when="/extra/slots">
+    <a href="/extra/slots"
+       ng-show="isExtra()"
+       class="nav-item"
+       active-when="/extra/slots">
       <i class="ion-android-calendar"></i>
       <span>Calendrier</span>
     </a>
@@ -24,7 +27,10 @@
       </span>
     </a>
 
-    <a href="/extra/profile" class="nav-item" active-when="/extra/profile">
+    <a href="/extra/profile"
+       class="nav-item"
+       ng-show="isResto()"
+       active-when="/extra/profile">
       <i class="ion-person"></i>
       <span>Profil</span>
     </a>
