@@ -62,7 +62,7 @@ angular.module('extraMinute')
             password: 'yolo',
             type: 'extra',
             image: 'assets/images/faces/6.jpg',
-            messages: 4
+            messages: 1
           },
           resto: {
             email: 'contact@benoit.com',

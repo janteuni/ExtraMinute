@@ -60,7 +60,7 @@ table.table-jobs {
     width: 25px;
   }
   td.w-10 {
-    width: 50px;
+    width: 10px;
     i {
       font-size: 35px;
       display: block;
@@ -118,12 +118,13 @@ table.table-jobs {
   height: 720px;
   .picture {
     width: 45%;
+    margin: 0 1em 1em 0;
     img {
       width: 100%;
     }
   }
   .avis {
-    border: 1px solid $c-black;
+    border: 1px solid rgba($c-black, .2);
     padding: .5em;
     font-size: .8em;
   }

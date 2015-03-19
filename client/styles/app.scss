@@ -130,3 +130,18 @@ a {
 a.discret {
   font-size: 16px;
 }
+
+.yolo-flex {
+  display: flex;
+  align-items: center;
+  > div {
+    padding: .5em;
+  }
+  i {
+    font-size: 35px;
+  }
+}
+
+strong {
+  font-weight: 400;
+}
