@@ -50,7 +50,7 @@ angular.module('extraMinute')
         desc: 'Sommelier, cravate noire, chemise blanche. Service, tout en noir. dispo de 18h a 1h',
         jobs : [
           { name: 'Sommelier', nb: 2},
-          { name: 'Service', nb: 2},
+          { name: 'Serveur', nb: 2},
           { name: 'Barman', nb: 1}
         ]
       },
@@ -61,35 +61,35 @@ angular.module('extraMinute')
           stars: 4,
            select: false,
            status: 'available',
-          job: ['Service', 'Sommelier']
+          job: ['Serveur', 'Sommelier']
         }, {
           name: 'Alice Poulis',
           status: 'available',
           img: 'assets/images/faces/3.jpg',
           stars: 4,
           select: false,
-          job: ['Service', 'Barman']
+          job: ['Serveur', 'Barman']
         }, {
           name: 'Christine Moh',
           img: 'assets/images/faces/4.jpg',
           stars: 2,
           select: false,
           status: 'available',
-          job: ['Service']
+          job: ['Serveur']
         }, {
           name: 'Paul Luanard',
           img: 'assets/images/faces/5.jpg',
           stars: 4,
           select: false,
           status: 'available',
-          job: ['Sommelier', 'Service']
+          job: ['Sommelier', 'Cuisinier']
         }, {
           name: 'Vincent chomier',
           img: 'assets/images/faces/6.jpg',
           stars: 3,
           select: false,
           status: 'available',
-          job: ['Commis']
+          job: ['Plongeur']
         }, {
           name: 'Delphine Plusis',
           img: 'assets/images/faces/7.jpg',
@@ -110,21 +110,21 @@ angular.module('extraMinute')
           stars: 2,
           select: false,
           status: 'available',
-          job: ['Service']
+          job: ['Serveur']
         }, {
           name: 'Charlotte Bauto',
           img: 'assets/images/faces/10.jpg',
           stars: 2,
           select: false,
           status: 'available',
-          job: ['Commis', 'Cuisto']
+          job: ['Cuisinier', 'Plongeur']
         }, {
           name: 'Alain louan',
           img: 'assets/images/faces/1.jpg',
           stars: 4,
           select: false,
           status: 'available',
-          job: ['Service','Barman']
+          job: ['Serveur','Barman']
         }
       ]
     });

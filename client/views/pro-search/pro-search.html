@@ -18,11 +18,10 @@
           </td>
           <td class="w-10">
             <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
-            <i ng-if="job.name == 'Cuisto' " class="icon-couvert"></i>
-            <i ng-if="job.name == 'Sous-chef' " class="icon-toque"></i>
-            <i ng-if="job.name == 'Service' " class="icon-clo"></i>
+            <i ng-if="job.name == 'Plongeur' " class="icon-couvert"></i>
+            <i ng-if="job.name == 'Cuisinier' " class="icon-toque"></i>
+            <i ng-if="job.name == 'Serveur' " class="icon-clo"></i>
             <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
-            <i ng-if="job.name == 'Commis' " class="icon-cut"></i>
           </td>
           <td class="w-70">
             <p>{{job.name}}</p>
@@ -71,11 +70,10 @@
             <tr  ng-repeat="job in result.job">
               <td class="w-10">
                 <i ng-if="job == 'Sommelier' " class="icon-bottle"></i>
-                <i ng-if="job == 'Cuisto' " class="icon-couvert"></i>
-                <i ng-if="job == 'Sous-chef' " class="icon-toque"></i>
-                <i ng-if="job == 'Service' " class="icon-clo"></i>
+                <i ng-if="job == 'Plongeur' " class="icon-couvert"></i>
+                <i ng-if="job == 'Cuisinier' " class="icon-toque"></i>
+                <i ng-if="job == 'Serveur' " class="icon-clo"></i>
                 <i ng-if="job == 'Barman' " class="icon-glass"></i>
-                <i ng-if="job == 'Commis' " class="icon-cut"></i>
               </td>
               <td class="w-70">
                 <p>{{job}}</p>

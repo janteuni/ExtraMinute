@@ -24,7 +24,7 @@ angular.module('extraMinute')
           status: 'available',
           jobs: [
             { name: 'Sommelier', nb: '1/2' },
-            { name: 'Cuisto', nb: '0/1' }
+            { name: 'Cuisinier', nb: '0/1' }
           ]
         }, {
           name: 'Sola',
@@ -33,7 +33,7 @@ angular.module('extraMinute')
           status: 'available',
           jobs: [
             { name: 'Sommelier', nb: '0/1' },
-            { name: 'Service', nb: '0/1' }
+            { name: 'Serveur', nb: '0/1' }
           ]
         }, {
           name: 'Maison Blanche',
@@ -42,8 +42,8 @@ angular.module('extraMinute')
           status: 'available',
           jobs: [
             { name: 'Barman', nb: '1/1' },
-            { name: 'Service', nb: '0/1' },
-            { name: 'Cuisto', nb: '0/1' }
+            { name: 'Serveur', nb: '0/1' },
+            { name: 'Cuisinier', nb: '0/1' }
           ]
         }, {
           name: 'Petit Sommelier',
@@ -51,8 +51,8 @@ angular.module('extraMinute')
           date: '21 Mars - Soirée',
           status: 'available',
           jobs: [
-            { name: 'Service', nb: '0/1' },
-            { name: 'Cuisto', nb: '0/1' }
+            { name: 'Serveur', nb: '0/1' },
+            { name: 'Cuisinier', nb: '0/1' }
           ]
         }, {
           name: 'Les climats',
@@ -60,7 +60,7 @@ angular.module('extraMinute')
           date: '22 Mars - Diner',
           status: 'available',
           jobs: [
-            { name: 'Commis', nb: '1/2' },
+            { name: 'Plongeur', nb: '1/2' },
             { name: 'Sommelier', nb: '0/2' }
           ]
         }, {
@@ -69,7 +69,7 @@ angular.module('extraMinute')
           date: '22 Mars - Soirée',
           status: 'available',
           jobs: [
-            { name: 'Sous-chef', nb: '1/1' },
+            { name: 'Plongeur', nb: '1/1' },
             { name: 'Sommelier', nb: '0/1' }
           ]
         }, {
@@ -87,7 +87,7 @@ angular.module('extraMinute')
           date: '24 Mars - Diner',
           status: 'available',
           jobs: [
-            { name: 'Service', nb: '0/1' }
+            { name: 'Serveur', nb: '0/1' }
           ]
         }
       ]
