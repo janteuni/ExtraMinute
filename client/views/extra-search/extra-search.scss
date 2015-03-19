@@ -17,6 +17,9 @@
       &.is-selected {
         border-color: $c-blue;
       }
+      &.is-waiting {
+        opacity: .5;
+      }
     }
   }
   .infos {
@@ -27,7 +30,7 @@
       line-height: 1em;
     }
     .jobs-pro {
-      height: 260px;
+      height: 210px;
       table {
         margin-top: 1em;
       }
@@ -35,7 +38,12 @@
     .jobs-extra {
       height: 160px;
     }
-
+    .date {
+      font-size: .8em;
+    }
+    .asked {
+      margin-top: -65px;
+    }
   }
 }
 

@@ -1,12 +1,27 @@
+<section class="row contained">
+  <div class="all-full">
+    <header class="big-title">
+      <h1><i class="big ion-ios-paper-outline"></i>Les dernières annonces</h1>
+    </header>
+  </div>
+</section>
+
+
 <section class="extra-results">
   <ul class="result row">
-    <li class="card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
+    <li ng-class="{'is-waiting': result.status == 'waiting'}" class="card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
       <img class="img-pro" src="{{result.img}}" alt=""/>
 
-      <div class="infos">
+      <div class="infos text-center">
+        <div ng-show="result.status == 'available'" class="asked marged-bot">
+          <button ng-click="vm.select($index)" class="btn-info select-all">Postuler</button>
+        </div>
+        <div ng-show="result.status == 'waiting'" class="asked marged-bot">
+          <button class="btn-info select-all">En attente</button>
+        </div>
         <div class="jobs-pro">
           <h2 class="text-center">{{result.name}}</h2>
-          <table>
+          <table class="table-jobs">
             <tr ng-repeat="job in result.jobs">
               <td class="w-10">
                 <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
@@ -26,11 +41,8 @@
           </table>
         </div>
 
-        <p class="text-center"><em class="c-red"><i class="icon-calendar marged-right"></i>{{result.date}}</em></p>
+        <p class="date text-center"><em class="c-red"><i class="icon-calendar marged-right"></i>{{result.date}}</em></p>
       </div>
-      <footer>
-        <button class="btn-info btn-block">Postuler</button>
-      </footer>
     </li>
   </ul>
 </section>
