@@ -29,18 +29,42 @@
     }
   }
 
+  .scene {
+    position: relative;
+  }
+
+  .mockup {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translate(100%, -50%);
+    position: absolute;
+    right: -1rem;
+    .btn {
+      font-size: 16px;
+      padding: .25em 1em;
+      border-radius: 5px;
+      display: flex;
+    }
+    > button + button {
+      margin-top: 1em;
+    }
+  }
+
 }
 
 .login-loader {
   display: block;
   position: absolute;
-  top: 300px;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-  .spinner {
-    width: 50px;
-    height: 50px;
-    -webkit-animation: rotating 2s linear infinite;
+  .hook {
+    .spinner {
+      width: 50px;
+      height: 50px;
+      -webkit-animation: rotating 2s linear infinite;
+    }
   }
   i {
     font-size: 50px;
