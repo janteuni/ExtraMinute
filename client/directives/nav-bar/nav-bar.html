@@ -6,7 +6,18 @@
 
   <nav>
 
-    <a href="/extra/search" class="nav-item" active-when="/extra/search">
+    <a href="/extra/search"
+       class="nav-item"
+       ng-show="isExtra()"
+       active-when="/extra/search">
+      <i class="ion-ios-search-strong"></i>
+      <span>Rechercher</span>
+    </a>
+
+    <a href="/pro/search"
+       class="nav-item"
+       ng-show="isResto()"
+       active-when="/pro/search">
       <i class="ion-ios-search-strong"></i>
       <span>Rechercher</span>
     </a>

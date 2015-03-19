@@ -58,13 +58,13 @@ angular.module('extraMinute')
       mockup: function (type) {
         vm.user = ({
           extra: {
-            email: 'jean.bon@gmail.com',
+            email: 'j.bon@gmail.com',
             password: 'yolo',
             type: 'extra',
             image: 'assets/images/faces/6.jpg'
           },
           resto: {
-            email: 'alain.ducasse@wanadoo.fr',
+            email: 'contact@benoit.com',
             password: 'yolooentuhonetuoenoesuhoentuhoesunoethsuoen',
             type: 'resto',
             image: 'assets/images/mockupresto.jpg'
