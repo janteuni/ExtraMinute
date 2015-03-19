@@ -13,6 +13,10 @@ angular.module('extraMinute')
     var vm = this;
 
     angular.extend(vm, {
+      afficheModal: function (e) {
+        e.stopPropagation();
+        vm.showmodal = true;
+      },
       select : function(num) {
         vm.results[num].status = 'waiting';
       },
@@ -91,6 +95,24 @@ angular.module('extraMinute')
           ]
         }
       ]
+    });
+
+    // anim
+
+    $timeout(function () {
+
+      var results = angular.element('.yolo-result');
+      TweenMax.staggerFrom(
+        results,
+        0.5,
+        {
+          scale: 0.5,
+          opacity: 0,
+          ease: Back.easeOut,
+          force3D: true
+        },
+        0.05
+      );
     });
 
   });

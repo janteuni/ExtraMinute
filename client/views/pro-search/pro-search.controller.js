@@ -17,6 +17,10 @@ angular.module('extraMinute')
     angular.extend(vm, {
       all : false,
       nbSelected: 0,
+      activateModal: function (event) {
+        event.stopPropagation();
+        vm.showmodal = true;
+      },
       getNumber: function(num) {
         return new Array(num);
       },

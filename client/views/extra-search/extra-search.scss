@@ -80,6 +80,7 @@ table.table-jobs {
 }
 
 .modal {
+  margin: 0 auto;
   position: relative;
   background-color: white;
   padding: .8em;
@@ -104,6 +105,11 @@ table.table-jobs {
     width: 34px;
     height: 34px;
     text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($c-red, 10);
+    }
   }
 }
 

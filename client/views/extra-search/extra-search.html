@@ -1,3 +1,41 @@
+<modal yolo="vm.showmodal">
+  <div class="modal">
+    <div class="close ion-close-round"></div>
+    <img src="assets/images/gm.jpg" alt=""/>
+    <h2 class="title marged-bot">La truffières</h2>
+    <p><i class="ion-location"></i> Paris</p>
+    <p class="marged-bot"><i class="icon-couvert"></i> 150 couverts</p>
+    <p class="desc">
+      Présence de 18h à minuit, <br>possibilité de manger sur place.<br>
+      Tenu: cravate noire, chemise blanche.
+    </p>
+    <table class="table-jobs">
+      <tr>
+        <td class="w-10">
+          <i class="icon-bottle"></i>
+        </td>
+        <td class="w-70">
+          <p>Sommelier</p>
+        </td>
+        <td class="w-5" align="center">
+          <em class="c-blue">0/1</em>
+        </td>
+      </tr>
+      <tr>
+        <td class="w-10">
+          <i class="icon-toque"></i>
+        </td>
+        <td class="w-70">
+          <p>Sous-chef</p>
+        </td>
+        <td class="w-5" align="center">
+          <em class="c-blue">1/1</em>
+        </td>
+      </tr>
+    </table>
+  </div>
+</modal>
+
 <section class="row contained">
   <div class="all-full">
     <header class="big-title">
@@ -11,8 +49,8 @@
   <ul class="result row">
     <li ng-class="{'is-waiting': result.status == 'waiting'}" class="yolo-result card desktop-3 tablet-half mobile-full" ng-repeat="result in vm.results">
 
-      <button ng-if="result.name == 'La Truffière'" ng-morph-modal="settings" class="round-right"><i class="ion-eye"></i></button>
-      <button ng-if="result.name != 'La Truffière'"  class="round-right"><i class="ion-eye"></i></button>
+      <button class="round-right" ng-click="vm.afficheModal($event)"><i class="ion-eye"></i></button>
+
       <img class="img-pro" src="{{result.img}}" alt=""/>
 
       <div class="infos text-center">
