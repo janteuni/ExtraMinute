@@ -1,4 +1,4 @@
-@import "../../styles/utils";
+@import "../../styles/variables";
 
 .extra-results {
   .img-pro {
@@ -9,8 +9,14 @@
   }
   ul.result {
     li.card {
+      cursor: pointer;
       overflow: hidden;
       margin-bottom: 1em;
+      border-width: 3px;
+      position: relative;
+      &.is-selected {
+        border-color: $c-blue;
+      }
     }
   }
   .infos {
@@ -58,8 +64,7 @@
 }
 
 .filters-search {
-  background-color: darken($c-blue, 18);
-  color: white;
+  color: $c-blue-dark;
   margin-bottom: 1em;
   margin-top: 1em;
   padding: 1em;

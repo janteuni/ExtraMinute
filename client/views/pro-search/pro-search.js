@@ -6,6 +6,7 @@ angular.module('extraMinute')
       .when('/pro/search', {
         templateUrl: 'views/pro-search/pro-search.html',
         controller: 'ProSearchCtrl',
+        navBar: true,
         controllerAs: 'vm'
       });
   });

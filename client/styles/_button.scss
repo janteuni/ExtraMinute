@@ -43,3 +43,57 @@
   background: $c-blue;
   color: white;
 }
+
+.btn-sm-info {
+  @extend .btn;
+  background: transparent;
+  color: $c-blue-dark;
+  border: 1px solid $c-blue-dark;
+  padding: .1em .8em;
+  outline: none;
+  text-decoration: none;
+  box-shadow: transparent 0 1px 1px;
+  font-size: 16px;
+  display: inline;
+  font-weight: 400;
+}
+
+.select-all {
+  background-color: $c-blue-dark;
+  color: white;
+}
+
+.round {
+  cursor: pointer;
+  font: inherit;
+  background: white;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid rgba($c-black, .3);
+  position: absolute;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  box-shadow: rgba($c-black, .2) 0 2px 3px;
+  &:hover{
+    background: darken(white, 5);
+  }
+}
+
+.round-right {
+  @extend .round;
+  top : 5px;
+  right: 5px;
+
+}
+
+.tag-left {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 1px solid $c-blue;
+  color: $c-blue;
+  font-size: 10px;
+  background-color: transparent;
+}
