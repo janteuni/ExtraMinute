@@ -3,9 +3,9 @@
 angular.module('extraMinute')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/extra/search', {
-        templateUrl: 'views/extra-search/extra-search.html',
-        controller: 'ExtraSearchCtrl',
+      .when('/messages', {
+        templateUrl: 'views/messages/messages.html',
+        controller: 'MessagesCtrl',
         navBar: true,
         controllerAs: 'vm'
       });

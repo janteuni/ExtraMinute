@@ -5,24 +5,35 @@
   </header>
 
   <nav>
-    <button class="nav-item active">
+
+    <a href="/extra/search" class="nav-item" active-when="/extra/search">
+      <i class="ion-ios-search-strong"></i>
+      <span>Rechercher</span>
+    </a>
+
+    <a href="/extra/slots" class="nav-item" active-when="/extra/slots">
       <i class="ion-android-calendar"></i>
-      <span>Creneaux</span>
-      <span class="badge-blue">12</span>
-    </button>
-    <button class="nav-item">
+      <span>Calendrier</span>
+    </a>
+
+    <a href="/messages" class="nav-item" active-when="/messages">
       <i class="ion-ios-email"></i>
       <span>Messages</span>
-      <span class="badge-red">4</span>
-    </button>
-    <button class="nav-item">
+      <span class="right">
+        <span class="badge-red">4</span>
+      </span>
+    </a>
+
+    <a href="/extra/profile" class="nav-item" active-when="/extra/profile">
       <i class="ion-person"></i>
       <span>Profil</span>
-    </button>
-    <button class="nav-item spaced">
+    </a>
+
+    <button class="nav-item spaced" ng-click="vm.logout()">
       <i class="ion-log-out"></i>
       <span>Deconnexion</span>
     </button>
+
   </nav>
 
 </div>

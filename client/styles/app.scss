@@ -5,6 +5,8 @@
 @import "sidebar";
 
 // imports
+@import "../views/messages/messages";
+@import "../views/extra-slots/extra-slots";
 @import "../directives/nav-bar/nav-bar";
 @import "../views/pro-search/pro-search";
 @import "../views/extra-profile/extra-profile";
@@ -37,8 +39,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  will-change: padding;
-  transition: 250ms ease-out padding;
   &.compressed {
     padding-left: 300px;
   }

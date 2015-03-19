@@ -36,6 +36,7 @@
 
   > nav {
     > .nav-item {
+      text-decoration: none;
       color: darken(white, 15);
       text-shadow: rgba(black, .5) 0 1px;
       cursor: pointer;
@@ -63,19 +64,24 @@
       > i {
         width: 50px;
         font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+        display: block;
       }
-      > .badge {
+      > .right {
         margin-left: auto;
         margin-right: 1em;
+      }
+      .badge {
         padding: 5px;
         border-radius: 8px;
       }
-      > .badge-red {
+      .badge-red {
         @extend .badge;
         background: $c-red;
         color: white;
       }
-      > .badge-blue {
+      .badge-blue {
         @extend .badge;
         background: $c-blue;
         color: white;
