@@ -47,12 +47,10 @@ angular.module('extraMinute')
       },
       offer: {
         name:'Les Benoits',
-        date: '19 Mars - Soirée',
-        desc: 'Sommelier, cravate noire, chemise blanche. Service, tout en noir. dispo de 18h a 1h',
+        date: '21 Mars - Midi',
+        desc: 'Super offre',
         jobs : [
-          { name: 'Sommelier', nb: 2},
-          { name: 'Serveur', nb: 2},
-          { name: 'Barman', nb: 1}
+          { name: 'Sommelier', nb: 1}
         ]
       },
       results: [
@@ -69,14 +67,14 @@ angular.module('extraMinute')
           img: 'assets/images/faces/3.jpg',
           stars: 4,
           select: false,
-          job: ['Serveur', 'Barman']
+          job: ['Sommelier', 'Barman']
         }, {
           name: 'Christine Moh',
           img: 'assets/images/faces/4.jpg',
           stars: 2,
           select: false,
           status: 'available',
-          job: ['Serveur']
+          job: ['Serveur', 'Sommelier']
         }, {
           name: 'Paul Luanard',
           img: 'assets/images/faces/5.jpg',

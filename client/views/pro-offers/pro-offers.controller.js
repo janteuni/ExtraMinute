@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('extraMinute')
-  .controller('ProOffersCtrl', function ($timeout) {
+  .controller('ProOffersCtrl', function ($timeout, $location, $rootScope) {
 
     var vm = this;
 
@@ -9,6 +9,10 @@ angular.module('extraMinute')
       activateModal: function (event) {
         event.stopPropagation();
         vm.showmodal = true;
+      },
+      goRechercher: function () {
+        $rootScope.omgyolo = true;
+        $location.path('/pro/search');
       },
       newOffer: {
         date: '21 Mars - Midi',
