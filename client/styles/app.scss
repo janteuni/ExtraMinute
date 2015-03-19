@@ -90,3 +90,14 @@ a {
     text-decoration: underline;
   }
 }
+
+.big-title {
+  color: $c-blue-dark;
+  padding: 2em 1em;
+  i {
+    margin-right: 1em;
+    &.big {
+      font-size: 1.2em;
+    }
+  }
+}
