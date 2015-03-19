@@ -2,8 +2,7 @@
 
 angular.module('extraMinute', [
   'ngRoute',
-  'ngAnimate',
-  'ngMorph'
+  'ngAnimate'
 ])
   .config(function ($routeProvider, $locationProvider) {
 
