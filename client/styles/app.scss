@@ -115,3 +115,10 @@ a {
     }
   }
 }
+
+.round-badge {
+  background: rgba($c-black, .1);
+  font-size: 18px;
+  padding: .5em;
+  border-radius: .5em;
+}

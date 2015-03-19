@@ -1,3 +1,31 @@
-/**
- * extra-slots.scss
- */
+@import "../../styles/variables";
+
+.calendar {
+  width: 650px;
+  margin: 0 auto;
+  td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em;
+    width: 250px;
+  }
+  td.labels {
+    width: 150px;
+    text-align: right;
+  }
+
+  .set-disp {
+    background: transparent;
+    font: inherit;
+    font-size: 18px;
+    text-decoration: underline;
+    color: $c-blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      color: darken($c-blue, 20);
+    }
+  }
+
+}

@@ -1,3 +1,48 @@
-<div>
-  {{ vm.name }}
+<div class="row">
+  <div class="all-full">
+
+    <div class="big-title">
+      <h1>
+        <i class="big ion-android-calendar"></i>
+        Mon calendrier
+      </h1>
+    </div>
+
+    <table class="calendar">
+      <tbody>
+        <tr>
+          <td class="labels">&nbsp;</td>
+          <td>
+          <span class="round-badge">
+            Midi
+          </span>
+          </td>
+          <td>
+          <span class="round-badge">
+            Soir
+          </span>
+          </td>
+        </tr>
+        <tr ng-repeat="day in vm.days">
+          <td class="labels">
+            <span class="round-badge">
+              {{ vm.getLabel(day) }}
+            </span>
+          </td>
+          <td>
+            <button class="set-disp">
+              Je suis disponible
+            </button>
+          </td>
+          <td>
+            <button class="set-disp">
+              Je suis disponible
+            </button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
 </div>
