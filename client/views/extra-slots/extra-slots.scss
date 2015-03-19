@@ -18,13 +18,39 @@
     background: transparent;
     font: inherit;
     font-size: 18px;
-    text-decoration: underline;
-    color: $c-blue;
+    color: $c-black;
     border: none;
     outline: none;
     cursor: pointer;
     &:hover {
       color: darken($c-blue, 20);
+    }
+  }
+
+  tr:hover td.labels.day {
+    background: rgba($c-black, .7);
+    span {
+      color: white;
+    }
+  }
+
+  .cell {
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+    background: rgba(white, .8);
+    &:hover {
+      background: rgba(white, .5);
+
+    }
+  }
+
+  .available {
+    font-size: 18px;
+    color: white;
+    background: $c-green;
+    &:hover {
+      background: rgba($c-green, .7);
     }
   }
 

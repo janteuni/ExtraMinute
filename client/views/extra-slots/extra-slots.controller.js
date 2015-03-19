@@ -14,16 +14,29 @@ angular.module('extraMinute')
         var current = moment();
         var last = moment(current).add(7, 'days');
         while (!current.isSame(last)) {
-          out.push(moment(current));
+          out.push({
+            date: moment(current),
+            midi: false,
+            soir: false
+          });
           current.add(1, 'days');
         }
+        out[0].soir = true;
+        out[1].soir = true;
+        out[4].midi = true;
+        out[5].soir = true;
+        out[6].soir = true;
         return out;
       })(),
 
       getLabel: function (day) {
         if (vm.days.indexOf(day) === 0) { return 'Aujourd\'hui'; }
         if (vm.days.indexOf(day) === 1) { return 'Demain'; }
-        return jours[day.toDate().getDay()];
+        return jours[day.date.toDate().getDay()];
+      },
+
+      setDisp: function (day, segment) {
+        day[segment] = !day[segment];
       }
 
     });
