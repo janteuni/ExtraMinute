@@ -41,4 +41,12 @@ angular.module('extraMinute')
 
     });
 
+    // anim
+
+    var cal = angular.element('.calendar');
+
+    new TimelineMax()
+      .set(cal, { scale: 0.8 })
+      .to(cal, 0.5, { scale: 1 });
+
   });

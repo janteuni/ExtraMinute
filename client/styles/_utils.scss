@@ -2,6 +2,11 @@
   padding: 1rem;
 }
 
+.pad-v {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -63,4 +68,8 @@ em {
 
 .flex-auto-end {
   margin-left: auto;
+}
+
+.float-right {
+  float: right;
 }

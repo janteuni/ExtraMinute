@@ -1,36 +1,43 @@
-
 <div class="row offers-list">
-  <header class="big-title">
-    <h2><i class="ion-plus-circled"></i>Ajouter une nouvelle offre</h2>
-  </header>
 
-  <header class="big-title">
-    <h2><i class="ion-ios-list-outline"></i>Mes offres</h2>
-  </header>
   <div class="all-full">
-    <div class="row" ng-repeat="offer in vm.offers">
 
-      <div class="all-half mobile-full">
-        <div class="card pad flow marged-top">
-          <p class="c-red">{{offer.date}}</p>
+    <header class="big-title">
+
+      <button class="btn-info float-right small">
+        <i class="ion-plus-circled"></i>
+        Nouvelle offre
+      </button>
+
+      <h2><i class="ion-ios-list-outline"></i>Mes offres</h2>
+
+    </header>
+
+  </div>
+
+  <div class="all-full result-row yolo-yallah" ng-repeat="offer in vm.offers">
+    <div class="row">
+
+      <div class="all-full desktop-half marged-bot">
+        <div class="flow pad-v">
+          <strong class="c-red">{{offer.date}}</strong>
         </div>
+        <button class="btn-sm-round">
+          <i class="ion-ios-search-strong"></i>
+          Rechercher des candidatures
+        </button>
       </div>
 
-      <div class="all-half mobile-full">
+      <div class="all-full desktop-half">
         <div class="row  big-bot">
-          <div class="all-full" ng-repeat="job in offer.jobs">
-            <div class="card pad flow marged-top">
+          <div class="all-full flow yolo-result" ng-repeat="job in offer.jobs">
+            <div class="card pad">
               <p class="flex">
-                <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
-                <i ng-if="job.name == 'Cuisto' " class="icon-couvert"></i>
-                <i ng-if="job.name == 'Sous-chef' " class="icon-toque"></i>
-                <i ng-if="job.name == 'Service' " class="icon-clo"></i>
-                <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
-                <i ng-if="job.name == 'Commis' " class="icon-cut"></i>
+                <i class="{{ vm.getJobIcon(job.name) }}"></i>
                 {{job.name}}
-                <em> {{job.extra}} </em>
+                <em class="extra-name"> {{job.extra}} </em>
                 <i ng-if="job.status == 'asked' " class="ion-clock flex-auto-end"></i>
-                <i ng-click="vm.selectOffer()" ng-if="job.status == 'confirmed' " class="ion-checkmark  flex-auto-end c-blue"></i>
+                <i ng-click="vm.selectOffer()" ng-if="job.status == 'confirmed' " class="ion-checkmark interact flex-auto-end"></i>
                 <i ng-if="job.status == 'booked' " class="ion-locked  flex-auto-end c-green"></i>
                 <i ng-if="job.status == 'waiting' " class="ion-clock flex-auto-end"></i>
               </p>

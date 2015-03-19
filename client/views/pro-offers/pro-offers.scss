@@ -1,6 +1,4 @@
-/**
- * pro-offers.scss
- */
+@import "../../styles/variables";
 
 .offers-list {
   p.flex {
@@ -14,6 +12,10 @@
     line-height: 35px;
     text-align: center;
     margin-right: 1em;
+    &.interact {
+      cursor: pointer;
+      display: inline;
+    }
   }
   em {
     font-size: 16px;
@@ -22,4 +24,18 @@
   .big-bot {
     margin-bottom: 3em;
   }
+
+  .result-row {
+    border-top: 2px solid $c-red;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  .extra-name {
+    background: rgba(black, .1);
+    padding: 0 1em;
+  }
+
 }

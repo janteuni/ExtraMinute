@@ -22,7 +22,9 @@ angular.module('extraMinute', [
     };
 
     $rootScope.user = {
-      type: 'resto'
+      type: 'resto',
+      messages: 32,
+      image: 'assets/images/mockupresto.jpg'
     };
 
     $rootScope.$on('$routeChangeSuccess', function (e, route) {

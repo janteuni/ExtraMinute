@@ -45,8 +45,8 @@ angular.module('extraMinute')
           .to(back, 0.25, { y: -30, opacity: 0 })
           .to(box, .5, { y: 30, opacity: 0, delay: -0.1 })
           .to(loader, 0.25, { scale: 1, opacity: 1, delay: -0.5, ease: 'Back.easeOut' })
-          .to(loader, 0.25, { opacity: 0, y: 30, delay: 0.5, ease: 'Back.easeIn' })
-          .to(header, 0.25, { opacity: 0, y: 30, delay: -0.25 })
+          .to(header, 0.5, { opacity: 0, y: 50, delay: 0.5, ease: 'Back.easeIn' })
+          .to(loader, 0.5, { opacity: 0, y: 50, delay: -0.25 })
           .addCallback(function () {
             $location.path(({
               extra: '/extra/slots',
@@ -61,13 +61,15 @@ angular.module('extraMinute')
             email: 'j.bon@gmail.com',
             password: 'yolo',
             type: 'extra',
-            image: 'assets/images/faces/6.jpg'
+            image: 'assets/images/faces/6.jpg',
+            messages: 4
           },
           resto: {
             email: 'contact@benoit.com',
             password: 'yolooentuhonetuoenoesuhoentuhoesunoethsuoen',
             type: 'resto',
-            image: 'assets/images/mockupresto.jpg'
+            image: 'assets/images/mockupresto.jpg',
+            messages: 137
           }
         })[type];
         $rootScope.user = vm.user;

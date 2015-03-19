@@ -73,8 +73,9 @@
         margin-right: 1em;
       }
       .badge {
-        padding: 5px;
+        padding: 3px 7px;
         border-radius: 8px;
+        font-size: 13px;
       }
       .badge-red {
         @extend .badge;
