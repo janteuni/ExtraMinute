@@ -35,30 +35,38 @@
     .jobs-extra {
       height: 160px;
     }
-    table {
-      width: 100%;
-      td {
-        vertical-align: middle;
-        font-size: 16px;
-      }
-      td.w-10 {
-        width: 10%;
-        i {
-          font-size: 35px;
-          display: block;
-          width: 35px;
-          height: 35px;
-          line-height: 35px;
-          text-align: center;
-        }
-      }
-      td.w-20 {
-        width: 20%;
-      }
-      td.w-70 {
-        width: 70%;
-        padding: .5em 0 .5em 1em;
-      }
+
+  }
+}
+
+table.table-jobs {
+  width: 100%;
+  em {
+    font-size: 1.4em;
+  }
+  td {
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  td.w-5 {
+    width: 25px;
+  }
+  td.w-10 {
+    width: 50px;
+    i {
+      font-size: 35px;
+      display: block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
     }
+  }
+  td.w-20 {
+    width: 75px;
+  }
+  td.w-70 {
+    width: 150px;
+    padding: .5em 0 .5em 1em;
   }
 }

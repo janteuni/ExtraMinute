@@ -35,6 +35,16 @@ angular.module('extraMinute')
       showProfile: function(event) {
         event.stopPropagation();
       },
+      offer: {
+        name:'Les Benoits',
+        date: '19 Mars - Soirée',
+        desc: 'Sommelier, cravate noire, chemise blanche. Service, tout en noir. dispo de 18h a 1h',
+        jobs : [
+          { name: 'Sommelier', nb: 2},
+          { name: 'Service', nb: 2},
+          { name: 'Barman', nb: 1}
+        ]
+      },
       results: [
          {
           name: 'Thomas Dumant',

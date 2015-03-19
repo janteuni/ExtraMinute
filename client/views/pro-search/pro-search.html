@@ -1,9 +1,37 @@
 
 <section class="row contained">
-  <div class="all-full">
-    <header class="big-title">
-      <h1><i class="big ion-ios-paper-outline"></i>Mon annonce</h1>
-    </header>
+  <div class="all-full pad">
+
+    <div class="card-offer marged-top">
+      <header>
+        <h1><i class="big ion-ios-paper-outline"></i>Mon annonce</h1>
+      </header>
+      <h2 class="title"> {{vm.offer.name}}</h2>
+      <p class="c-red marged-bot">
+        <em>{{vm.offer.date}}</em>
+      </p>
+      <p class="marged-bot">{{vm.offer.desc}}</p>
+      <table class="table-jobs">
+        <tr ng-repeat="job in vm.offer.jobs">
+          <td class="w-5" align="center">
+            <em class="c-blue">{{job.nb}}</em> x
+          </td>
+          <td class="w-10">
+            <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
+            <i ng-if="job.name == 'Cuisto' " class="icon-couvert"></i>
+            <i ng-if="job.name == 'Sous-chef' " class="icon-toque"></i>
+            <i ng-if="job.name == 'Service' " class="icon-clo"></i>
+            <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
+            <i ng-if="job.name == 'Commis' " class="icon-cut"></i>
+          </td>
+          <td class="w-70">
+            <p>{{job.name}}</p>
+          </td>
+
+        </tr>
+      </table>
+
+    </div>
     <header class="big-title">
       <h1><i class="icon-toque"></i>Rechercher une aide extraordinaire</h1>
     </header>
@@ -38,7 +66,7 @@
           <p class="text-center">
             <i class="ion-star c-yellow" ng-repeat="i in vm.getNumber(result.stars) track by $index"></i>
           </p>
-          <table>
+          <table class="table-jobs">
             <tr  ng-repeat="job in result.job">
               <td class="w-10">
                 <i ng-if="job == 'Sommelier' " class="icon-bottle"></i>
