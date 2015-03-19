@@ -37,6 +37,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  will-change: padding;
+  transition: 250ms ease-out padding;
+  &.compressed {
+    padding-left: 300px;
+  }
 }
 
 .view {

@@ -28,11 +28,11 @@
     <!-- endbuild -->
 
   </head>
-  <body class="gridlock">
+  <body class="gridlock gridlock-fluid">
 
     <nav-bar ng-show="ui.navBar"></nav-bar>
 
-    <div class="viewport">
+    <div class="viewport" ng-class="{ compressed: ui.navBar }">
       <div ng-view class="view"></div>
     </div>
 
