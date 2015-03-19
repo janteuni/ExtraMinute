@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('extraMinute')
-  .controller('ExtraSearchCtrl', function ($scope) {
+  .controller('ExtraSearchCtrl', function ($scope, $timeout) {
 
     $scope.settings = {
       closeEl: '.close',

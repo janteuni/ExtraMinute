@@ -50,7 +50,7 @@
   </div>
 
   <ul class="result row flow">
-    <li class="card desktop-3 tablet-2 mobile-full" ng-repeat="result in vm.results" ng-class="{'is-selected': result.select}" ng-click="vm.select($index)">
+    <li class="yolo-result card desktop-3 tablet-2 mobile-full" ng-repeat="result in vm.results" ng-class="{'is-selected': result.select}" ng-click="vm.select($index)">
 
       <button ng-if="result.name == 'Alice Poulis'" ng-morph-modal="settings" class="round-right"><i class="ion-eye"></i></button>
       <button ng-if="result.name != 'Alice Poulis'"  class="round-right"><i class="ion-eye"></i></button>
@@ -59,7 +59,7 @@
       <span ng-if="result.status == 'confirmed'">confirmé</span>
       </button>
 
-      <img class="img-extra" src="{{result.img}}" alt=""/>
+      <img class="img-extra" ng-src="{{result.img}}" alt=""/>
 
       <div class="infos">
         <div class="jobs-extra">
