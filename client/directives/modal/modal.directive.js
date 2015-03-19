@@ -42,6 +42,9 @@ angular.module('extraMinute')
         });
 
         contain.on('click', function (e) {
+          if (angular.element(e.target).parents('ng-transclude').length) {
+            return;
+          }
           hideModal();
           scope.trigger = false;
           scope.$apply();
