@@ -1,0 +1,45 @@
+
+<div class="row offers-list">
+  <header class="big-title">
+    <h2><i class="ion-plus-circled"></i>Ajouter une nouvelle offre</h2>
+  </header>
+
+  <header class="big-title">
+    <h2><i class="ion-ios-list-outline"></i>Mes offres</h2>
+  </header>
+  <div class="all-full">
+    <div class="row" ng-repeat="offer in vm.offers">
+
+      <div class="all-half mobile-full">
+        <div class="card pad flow marged-top">
+          <p class="c-red">{{offer.date}}</p>
+        </div>
+      </div>
+
+      <div class="all-half mobile-full">
+        <div class="row  big-bot">
+          <div class="all-full" ng-repeat="job in offer.jobs">
+            <div class="card pad flow marged-top">
+              <p class="flex">
+                <i ng-if="job.name == 'Sommelier' " class="icon-bottle"></i>
+                <i ng-if="job.name == 'Cuisto' " class="icon-couvert"></i>
+                <i ng-if="job.name == 'Sous-chef' " class="icon-toque"></i>
+                <i ng-if="job.name == 'Service' " class="icon-clo"></i>
+                <i ng-if="job.name == 'Barman' " class="icon-glass"></i>
+                <i ng-if="job.name == 'Commis' " class="icon-cut"></i>
+                {{job.name}}
+                <em> {{job.extra}} </em>
+                <i ng-if="job.status == 'asked' " class="ion-clock flex-auto-end"></i>
+                <i ng-click="vm.selectOffer()" ng-if="job.status == 'confirmed' " class="ion-checkmark  flex-auto-end c-blue"></i>
+                <i ng-if="job.status == 'booked' " class="ion-locked  flex-auto-end c-green"></i>
+                <i ng-if="job.status == 'waiting' " class="ion-clock flex-auto-end"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+ </div>

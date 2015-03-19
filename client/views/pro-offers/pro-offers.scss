@@ -1,3 +1,25 @@
 /**
  * pro-offers.scss
  */
+
+.offers-list {
+  p.flex {
+    align-items: center;
+  }
+  .card i {
+    font-size: 35px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 1em;
+  }
+  em {
+    font-size: 16px;
+    margin-left: 1em;
+  }
+  .big-bot {
+    margin-bottom: 3em;
+  }
+}
