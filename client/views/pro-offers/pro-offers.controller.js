@@ -10,12 +10,24 @@ angular.module('extraMinute')
         event.stopPropagation();
         vm.showmodal = true;
       },
+      newOffer: {
+        date: '21 Mars - Midi',
+        status: 'available',
+        posts : [
+          { name: 'Sommelier', nb: 1}
+        ],
+        jobs: []
+      },
+      addOffer: function () {
+        vm.offers.unshift(vm.newOffer);
+        vm.shittyModal = false;
+      },
       activ : false,
       tabStars: [false, false, false, false],
       stars : function(num) {
         vm.tabStars[num] = true;
       },
-      shittyModal: true,
+      shittyModal: false,
       selectOffer: function() {
         vm.offers[0].jobs[1].status = 'booked';
         vm.offers[0].jobs.splice(2);
@@ -32,7 +44,7 @@ angular.module('extraMinute')
       },
       offers: [
         {
-          date: '20 Mars - Diner',
+          date: '20 Mars - Soir',
           status: 'available',
           posts : [
             { name: 'Sommelier', nb: 1},
@@ -62,7 +74,7 @@ angular.module('extraMinute')
           ]
         },
         {
-          date: '21 Mars - Diner',
+          date: '21 Mars - Soir',
           status: 'available',
           posts : [
             { name: 'Sommelier', nb: 2}

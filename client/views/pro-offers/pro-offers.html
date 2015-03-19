@@ -60,16 +60,67 @@
     </div>
     <form ng-submit="vm.addOffer()">
 
-      <div class="form-group">
-        <label for="">Quoi ?</label>
-        <textarea class="form-control visible"
-                  placeholder="Description"/>
+      <div class="row">
+        <div class="all-full">
+
+          <div class="form-group">
+            <label>Quoi ?</label>
+            <textarea class="form-control visible"
+                  placeholder="Description"></textarea>
+          </div>
+
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="">Quand ?</label>
-        <input type="date" class="form-control visible"/>
+      <div class="row marged-bot">
+
+        <div class="all-half">
+
+          <div class="form-group">
+            <label>Quand ?</label>
+            <input type="date" class="form-control visible"/>
+          </div>
+
+        </div>
+
+        <div class="all-half">
+          <div class="form-group">
+            <label style="margin-bottom: 5px">Plus precisement ?</label><br/>
+            <label class="yyyttt">
+              <input type="radio" ng-model="color.name" value="red"> Midi
+            </label> &nbsp;&nbsp;
+            <label class="yyyttt">
+              <input type="radio" ng-model="color.name"> Soir
+            </label>
+          </div>
+        </div>
+
       </div>
+
+
+      <div class="row">
+        <div class="desktop-9">
+          <div class="form-group">
+            <label>Qui ?</label>
+            <input class="form-control visible" type="text" placeholder="Intitule du poste"/>
+          </div>
+          <a class="discret" href="">+ Ajouter un poste supplementaire</a>
+        </div>
+        <div class="desktop-3">
+          <div class="form-group">
+            <label>Combien ?</label>
+            <input class="form-control visible" type="number" value="1"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="yolo-aha">
+        <button class="btn">
+          <i class="ion-paper-airplane"></i>
+          C'est parti !
+        </button>
+      </div>
+
 
     </form>
   </div>

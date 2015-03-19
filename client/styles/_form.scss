@@ -7,6 +7,10 @@
     background: rgba($c-blue, .2);
     padding: 4px;
     color: $c-blue;
+    &.yyyttt {
+      background: none;
+      color: $c-black;
+    }
   }
 
   & + .form-group {
